@@ -509,9 +509,9 @@ The password was retrieved by submitting the current level's password to a servi
 
 ```bash
 # Pipe the password directly into netcat, which sends it to the port
-echo <bandit14_password>" | nc localhost 30000
+echo "<bandit14_password>" | nc localhost 30000
 
-# Server responds: Correct! pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
+# Server responds: Correct! Password is shown
 ```
 
 **What `nc` (Netcat) does:**
