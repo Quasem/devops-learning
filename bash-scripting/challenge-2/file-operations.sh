@@ -18,5 +18,11 @@ else
 fi
 
 cd bash_demo || exit 1
+if [ -f "demo.txt" ]; then
+    echo "File 'demo.txt' already exists. Line has been added to the file."
+else
+    echo "File 'demo.txt' created."
+fi
+
 echo "This file was created by a Bash script on $(date +%Y-%m-%d)" >> demo.txt
 echo "File contents: $(cat demo.txt)"
